@@ -1,3 +1,4 @@
+import { List } from './List';
 import { useState } from "react";
 import data from "./data";
 
@@ -8,11 +9,7 @@ const App = () => {
       <h2>{people.length} birthdays today</h2>
       {people.map((p) => {
         const { id, name, image, age } = p;
-        return <div key={id}>
-          <img src={image} className='img' alt={name} style={{width:100}}/>
-          <h3>{name}</h3>
-          <h4>{age} years</h4>
-        </div>;
+        return <List id={id} image={image} name={name} age={age}  />;
       })}
     </div>
   );
