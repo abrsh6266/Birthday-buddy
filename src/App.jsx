@@ -1,11 +1,12 @@
 import List from "./List";
 
 const App = () => {
-  
   return (
-    <div>
-      <List />
-    </div>
+    <main>
+      <section className="container">
+        <List />
+      </section>
+    </main>
   );
 };
 export default App;
