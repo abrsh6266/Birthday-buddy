@@ -9,8 +9,9 @@ const List = () => {
       {people.map((p) => {
         return (
           <Person   p={p} />
-        );
+        ); 
       })}
+      <button onClick={()=> setPeople([])} className='btn btn-block' style={{background: 'grey'}}>Clear All</button>
     </div>
   );
 };
